@@ -12,9 +12,12 @@ git –version
 
 git branch feature-branch
  git checkout feature-branch
+vi demo2.txt
+git add demo2.txt
+git commit-m"demo2"
 git checkout master 
 git merge feature-branch
-git status //it will check the status
+git status 
 git push origin master
 
 git branch feature-branch2
@@ -22,7 +25,6 @@ git status
 vi sample.txt
 git add sample.txt
 git checkout feature-branch2
-git log –oneline 
 git stash
 git stash list
 git stash apply
@@ -35,27 +37,28 @@ git add suppi.txt
 git add sample 2.txt
 git commi-m "done"
 git fetch origin
-git rebase master feature - branch
+git checkout master feature - branch
 git status
 
 
-git rebase master 
+git merge feature-branch
 git add suppi.txt
 git commit –m “custom commit message”
 
 git checkout master
-git demo3.txt
+git demo2.txt
+vi demo3.txt
 git add vi demo3.txt
 git add demo3.txt
+git commit-m"done"
 git tag v1.0
 git tag //it will show v1.0
-git tag –a v1.1 -m “tag for release ver 1.1”
-git show v1.0
+git tag –a v1.1 -m “tag for release ver 1.1”
 git tag –l “v1.*”
 git push origin v1.0 
 
-mkdir Git cherry picking
-cd Git cherry picking
+git mkdir cherrypicking
+mkdir cherrypicking
 git init
 vi alpha.txt
 git add . | git commit –m “1st commit”
